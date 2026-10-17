@@ -158,8 +158,8 @@ dialog p{line-height:1.5}
 #dialog-content{display:grid;gap:10px}
 #dialog-content a{padding:16px 0;border-bottom:1px solid;display:flex;justify-content:space-between;font-weight:bold;animation:fade-up .5s var(--ease) both;animation-delay:calc(var(--i)*80ms + .15s);transition:padding .3s var(--ease),color .3s}
 #dialog-content a:hover{padding-left:12px;color:var(--orange)}
-#photo-dialog{padding:0;background:var(--green);width:auto;max-width:90vw}
-#photo-dialog img{max-height:80vh;width:auto;max-width:88vw;object-fit:contain}
+#photo-dialog{padding:0;background:var(--green);width:fit-content;max-width:90vw;overflow:hidden}
+#photo-dialog img{max-height:80vh;width:auto;height:auto;max-width:88vw;object-fit:contain}
 #photo-dialog .close{background:var(--cream);border-radius:50%;width:40px;height:40px;z-index:1}
 
 /* ---------- scroll reveal ---------- */
