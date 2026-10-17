@@ -1,0 +1,4 @@
+# Fotos antigas da Tripletta (não usadas)
+assets/photo-*.webp
+# Originais pesados; o site usa as versões otimizadas em assets/web/
+assets/*.png

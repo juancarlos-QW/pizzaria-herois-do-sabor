@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Pizzaria Heróis do Sabor — pizzaria temática em Farroupilha/RS. Tele-entrega e retirada todos os dias a partir das 18h.">
+<meta name="theme-color" content="#004632">
+<title>Heróis do Sabor — Pizzaria temática</title>
+<link rel="icon" href="assets/web/logo-mark.png">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#principal">Pular para o conteúdo</a>
+
+<header id="topo">
+  <a href="#" class="mini-logo" aria-label="Heróis do Sabor início"><img src="assets/web/logo-mark.png" alt=""></a>
+  <span class="tagline">PIZZARIA TEMÁTICA · FARROUPILHA</span>
+  <nav aria-label="Navegação principal">
+    <a href="#historia">Nossa missão</a>
+    <a href="#sabores">Sabores</a>
+    <button data-dialog="order">Peça agora ↗</button>
+    <button id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">MENU <span>☰</span></button>
+  </nav>
+</header>
+<div id="mobile-menu" hidden>
+  <a href="#historia">Nossa missão</a>
+  <a href="#sabores">Sabores</a>
+  <a href="#mural">Mural dos heróis</a>
+  <button data-dialog="order">Peça agora ↗</button>
+</div>
+
+<main id="principal">
+  <section class="hero" aria-labelledby="brand">
+    <h1 id="brand" aria-label="Heróis do Sabor"><span class="word" aria-hidden="true">heróis</span><em aria-hidden="true">do sabor</em></h1>
+    <div class="hero-caption">
+      <span>TELE-ENTREGA &amp; RETIRADA.</span>
+      <span>TODOS OS DIAS A PARTIR DAS 18H.</span>
+      <span>SCROLL PARA SENTIR O SABOR ↓</span>
+    </div>
+    <div class="services">
+      <button class="service" data-dialog="delivery"><div class="service-title">entrega <span>↗</span></div><div class="photo"><img src="assets/web/img5.jpg" alt="Caixas de pizza Heróis do Sabor empilhadas sobre uma pizza"><span class="photo-note">O herói chega até você.</span></div></button>
+      <button class="service" data-dialog="takeaway"><div class="service-title">retirada <span>↗</span></div><div class="photo"><img src="assets/web/img10.jpg" alt="Herói fantasiado segurando uma pilha de caixas de pizza"><span class="photo-note">Passa aqui e leva quentinha.</span></div></button>
+      <a class="service" href="#sabores"><div class="service-title">sabores <span>↗</span></div><div class="photo"><img src="assets/web/img2.jpg" alt="Pizza com borda recheada, calabresa e queijo gratinado"><span class="photo-note">Escolha os seus superpoderes.</span></div></a>
+      <a class="service" href="https://www.instagram.com/pizzariaheroisdosabor/" target="_blank" rel="noopener"><div class="service-title">insta <span>↗</span></div><div class="photo"><img src="assets/web/img7.jpg" alt="Pizzas de queijo saindo para entrega"><span class="photo-note">@pizzariaheroisdosabor</span></div></a>
+    </div>
+  </section>
+
+  <div class="marquee" aria-label="Pizzas, xis, porções, doces, tele-entrega e retirada"><div aria-hidden="true">PIZZAS ✳ XIS ✳ PORÇÕES ✳ PIZZAS DOCES ✳ TELE-ENTREGA ✳ RETIRADA ✳ PIZZAS ✳ XIS ✳ PORÇÕES ✳ PIZZAS DOCES ✳ TELE-ENTREGA ✳ RETIRADA ✳ </div></div>
+
+  <section class="story" id="historia">
+    <span class="eyebrow" data-reveal>UMA PIZZARIA TEMÁTICA. COM SUPERPODERES.</span>
+    <h2 data-reveal>Todo herói<br>precisa de uma <em>pizza.</em></h2>
+    <div class="story-bottom">
+      <img class="sun" src="assets/web/logo-mark.png" alt="" data-reveal>
+      <p data-reveal>Massa caseira, recheio generoso e borda que dá vontade de pedir de novo. Aqui cada pizza sai do forno pronta pra salvar a sua noite, seja na sua casa ou direto do balcão pra sua mão.</p>
+      <button class="pill" data-dialog="order" data-reveal>Chamar os heróis <span>↗</span></button>
+    </div>
+  </section>
+
+  <section class="collection" id="sabores">
+    <div class="collection-photo"><img src="assets/web/img15.jpg" loading="lazy" alt="Pizza com borda recheada e pizza doce colorida lado a lado" data-parallax><span class="sticker">SABOR<br>DE<br>HERÓI ✳</span></div>
+    <div class="collection-copy">
+      <span class="eyebrow" data-reveal>DO NOSSO FORNO PARA A SUA MESA.</span>
+      <h2 data-reveal>Salgadas.<br>Doces.<br><em>Heroicas.</em></h2>
+      <div class="flavors" data-reveal>
+        <h3>Tradicionais</h3>
+        <ul><li>Mussarela</li><li>4 queijos</li><li>Alho e óleo</li><li>Calabresa</li><li>Marguerita</li><li>Milho</li><li>Romanesca</li><li>Brócolis c/ catupiry</li></ul>
+        <h3>Doces</h3>
+        <ul><li>Chocolate branco</li><li>Chocolate preto</li><li>M&amp;M's</li><li>Kinder Ovo</li><li>Sensação</li><li>Morango</li><li>Moreno</li><li>Mousses</li></ul>
+      </div>
+      <a class="pill" href="https://app.cardapioweb.com/pizzariaheroisdosabor?s=cb" target="_blank" rel="noopener" data-reveal>Ver cardápio completo <span>↗</span></a>
+    </div>
+  </section>
+
+  <section id="mural" class="wall">
+    <div class="wall-heading"><span class="eyebrow" data-reveal>DIRETO DO NOSSO FORNO</span><h2 data-reveal>MURAL <em>dos</em> HERÓIS</h2></div>
+    <div class="gallery">
+      <button data-photo data-reveal><img src="assets/web/img9.jpg" loading="lazy" alt="Pizza de batata palha ao lado de pizza de carne com queijo"></button>
+      <button data-photo data-reveal><img src="assets/web/img13.jpg" loading="lazy" alt="Pizza doce de chocolate branco e preto"></button>
+      <button data-photo data-reveal><img src="assets/web/img11.jpg" loading="lazy" alt="Porção de fritas com cheddar e pizza de queijo"></button>
+      <button data-photo data-reveal><img src="assets/web/img4.jpg" loading="lazy" alt="Pizza doce de morango com chocolate branco"></button>
+      <button data-photo data-reveal><img src="assets/web/img14.jpg" loading="lazy" alt="Pizza de calabresa com borda recheada e pizza de chocolate"></button>
+      <button data-photo data-reveal><img src="assets/web/img12.jpg" loading="lazy" alt="Pizza doce de chocolate granulado com leite condensado"></button>
+    </div>
+    <p>Clique nas fotos para ampliar. Mais sabor em <a href="https://www.instagram.com/pizzariaheroisdosabor/" target="_blank" rel="noopener">@pizzariaheroisdosabor ↗</a></p>
+  </section>
+
+  <section class="closing">
+    <span data-reveal>A FOME APERTOU? CHAMA OS HERÓIS.</span>
+    <h2 data-reveal>Hoje tem<br>pizza de <em>herói.</em></h2>
+    <div class="info">
+      <div data-reveal><span class="eyebrow">HORÁRIO</span><p>Todos os dias<br>a partir das 18h</p></div>
+      <a data-reveal href="https://www.google.com/maps/search/?api=1&amp;query=Rua+V%C3%AAneto+310+Nova+Vicenza+Farroupilha+RS" target="_blank" rel="noopener"><span class="eyebrow">ENDEREÇO ↗</span><p>Rua Vêneto, 310, sala 100<br>Nova Vicenza, Farroupilha/RS</p></a>
+      <a data-reveal href="tel:+5554991221339"><span class="eyebrow">PEDIDOS ↗</span><p>(54) 99122-1339<br>Só tele-entrega e retirada</p></a>
+    </div>
+    <button class="pill" data-dialog="order" data-reveal>Fazer meu pedido <span>↗</span></button>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-top"><a href="#historia">Nossa missão</a><a href="#sabores">Sabores</a><a href="https://www.instagram.com/pizzariaheroisdosabor/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://app.cardapioweb.com/pizzariaheroisdosabor?s=cb" target="_blank" rel="noopener">Cardápio ↗</a><a href="#">Voltar ao topo ↑</a></div>
+  <div class="footer-brand" aria-hidden="true">heróis</div>
+  <div class="fineprint"><span>PIZZARIA HERÓIS DO SABOR · FARROUPILHA/RS</span><span>Rua Vêneto, 310, sala 100 · Nova Vicenza · (54) 99122-1339</span></div>
+</footer>
+
+<a class="fab" href="https://app.cardapioweb.com/pizzariaheroisdosabor?s=cb" target="_blank" rel="noopener" aria-label="Peça agora pelo cardápio online">
+  <svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="fab-circle" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs><text><textPath href="#fab-circle" textLength="292">PEÇA AGORA ✳ PEÇA AGORA ✳ </textPath></text></svg>
+  <img src="assets/web/logo-mark.png" alt="">
+</a>
+
+<dialog id="action-dialog"><button class="close" aria-label="Fechar janela">✕</button><span class="eyebrow">PIZZARIA HERÓIS DO SABOR</span><h2 id="dialog-title">Bora pedir?</h2><p id="dialog-copy"></p><div id="dialog-content"></div></dialog>
+<dialog id="photo-dialog"><button class="close" aria-label="Fechar foto">✕</button><img id="large-photo" alt=""></dialog>
+</body>
+</html>
