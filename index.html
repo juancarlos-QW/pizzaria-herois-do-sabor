@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Pizzaria Heróis do Sabor — pizzaria temática em Farroupilha/RS. Tele-entrega e retirada todos os dias a partir das 18h.">
-<meta name="theme-color" content="#004632">
+<meta name="theme-color" content="#2b2727">
 <title>Heróis do Sabor — Pizzaria temática</title>
 <link rel="icon" href="assets/web/logo-mark.png">
 <link rel="stylesheet" href="style.css">
@@ -13,6 +13,7 @@
 </head>
 <body>
 <a class="skip" href="#principal">Pular para o conteúdo</a>
+<div class="scene" aria-hidden="true"><div class="scene-img is-active" style="--img:url(assets/web/hero.jpg)"></div><div class="scene-img" style="--img:url(assets/web/hero-2.jpg)"></div><div class="scene-shade"></div></div>
 
 <header id="topo">
   <a href="#" class="mini-logo" aria-label="Heróis do Sabor início"><img src="assets/web/logo-mark.png" alt=""></a>
@@ -33,11 +34,13 @@
 
 <main id="principal">
   <section class="hero" aria-labelledby="brand">
-    <h1 id="brand" aria-label="Heróis do Sabor"><span class="word" aria-hidden="true">heróis</span><em aria-hidden="true">do sabor</em></h1>
-    <div class="hero-caption">
-      <span>TELE-ENTREGA &amp; RETIRADA.</span>
-      <span>TODOS OS DIAS A PARTIR DAS 18H.</span>
-      <span>SCROLL PARA SENTIR O SABOR ↓</span>
+    <div class="hero-top" data-scene="0">
+      <h1 id="brand" aria-label="Heróis do Sabor"><span class="word" aria-hidden="true">heróis</span><em aria-hidden="true">do sabor</em></h1>
+      <div class="hero-caption">
+        <span>TELE-ENTREGA &amp; RETIRADA.</span>
+        <span>TODOS OS DIAS A PARTIR DAS 18H.</span>
+        <span>SCROLL PARA SENTIR O SABOR ↓</span>
+      </div>
     </div>
     <div class="services">
       <button class="service" data-dialog="delivery"><div class="service-title">entrega <span>↗</span></div><div class="photo"><img src="assets/web/img5.jpg" alt="Caixas de pizza Heróis do Sabor empilhadas sobre uma pizza"><span class="photo-note">O herói chega até você.</span></div></button>
@@ -47,7 +50,7 @@
     </div>
   </section>
 
-  <div class="marquee" aria-label="Pizzas, xis, porções, doces, tele-entrega e retirada"><div aria-hidden="true">PIZZAS ✳ XIS ✳ PORÇÕES ✳ PIZZAS DOCES ✳ TELE-ENTREGA ✳ RETIRADA ✳ PIZZAS ✳ XIS ✳ PORÇÕES ✳ PIZZAS DOCES ✳ TELE-ENTREGA ✳ RETIRADA ✳ </div></div>
+  <div class="marquee" data-scene="0" aria-label="Pizzas, xis, porções, doces, tele-entrega e retirada"><div aria-hidden="true">PIZZAS ✳ XIS ✳ PORÇÕES ✳ PIZZAS DOCES ✳ TELE-ENTREGA ✳ RETIRADA ✳ PIZZAS ✳ XIS ✳ PORÇÕES ✳ PIZZAS DOCES ✳ TELE-ENTREGA ✳ RETIRADA ✳ </div></div>
 
   <section class="story" id="historia">
     <span class="eyebrow" data-reveal>UMA PIZZARIA TEMÁTICA. COM SUPERPODERES.</span>
@@ -87,7 +90,7 @@
     <p>Clique nas fotos para ampliar. Mais sabor em <a href="https://www.instagram.com/pizzariaheroisdosabor/" target="_blank" rel="noopener">@pizzariaheroisdosabor ↗</a></p>
   </section>
 
-  <section class="closing">
+  <section class="closing" data-scene="1">
     <span data-reveal>A FOME APERTOU? CHAMA OS HERÓIS.</span>
     <h2 data-reveal>Hoje tem<br>pizza de <em>herói.</em></h2>
     <div class="info">

@@ -49,6 +49,11 @@ document.querySelectorAll('[data-reveal]').forEach(el=>{
 document.querySelectorAll('.gallery [data-reveal]').forEach(el=>el.addEventListener('transitionend',()=>{el.style.transitionDelay=''},{once:true}));
 const flavors=document.querySelector('.flavors');new MutationObserver((_,o)=>{if(flavors.classList.contains('is-in')){setTimeout(()=>flavors.classList.add('is-done'),1400);o.disconnect()}}).observe(flavors,{attributes:true});
 
+// Cenário de fundo: troca de foto conforme a seção que está no meio da tela
+const scene=document.querySelector('.scene'),sceneImgs=[...scene.querySelectorAll('.scene-img')];
+const sceneObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)sceneImgs.forEach((img,i)=>img.classList.toggle('is-active',i===Number(e.target.dataset.scene)))}),{rootMargin:'-45% 0px -45% 0px'});
+document.querySelectorAll('[data-scene]').forEach(s=>sceneObserver.observe(s));
+
 // Cabeçalho, barra de progresso, selo flutuante, parallax e letreiro reagindo à rolagem
 const header=document.querySelector('header'),fab=document.querySelector('.fab'),hero=document.querySelector('.hero');
 const marquee=document.querySelector('.marquee div'),parallax=[...document.querySelectorAll('[data-parallax]')];
@@ -57,6 +62,7 @@ let lastY=scrollY,ticking=false,skewTimer;
 function onScroll(){
   const y=scrollY,max=document.documentElement.scrollHeight-innerHeight,delta=y-lastY;
   header.style.setProperty('--progress',max>0?y/max:0);
+  if(!reduceMotion)scene.style.setProperty('--y',max>0?y/max:0);
   header.classList.toggle('is-hidden',delta>4&&y>300&&menu.hidden);
   if(delta<-4)header.classList.remove('is-hidden');
   fab.classList.toggle('is-visible',y>hero.offsetHeight*.6);
